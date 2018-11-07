@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Findo - Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+         <!--Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+         <!--Stylesheets-->
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div class="heroElements">
+			<img src="images/Findo%20Logo.png" alt="Findo logo">
+            <p class="primaryInstructions">Findo is a search application that can be used to explore conversations in your specified location using Twitter's Full-Archive Search API.</p>
+            <p class="secondaryInstructions">Simply enter a topic you're interested in, and the location you want to search</p>
+            <div class="searchField">
+                <form autocomplete="off" action="results.html" name="userSearch">
+                    <fieldset>
+						<div class="inputAlign">
+                        	<label class="labelTopic">
+								<span class="icon-Error-Mark"></span>Please enter a topic
+							</label>
+                         	<div class="outline">
+							 	<input type="text" placeholder="Topic" name="topic">
+                        	</div>
+						</div>
+						<div class="inputAlign">
+                        	<label class="labelLocation">
+								<span class="icon-Error-Mark"></span>Please enter a location
+							</label>
+                        	<div class="outline">
+								<input type="text" placeholder="Location" name="location">
+                        	</div>
+						</div>
+                        <input type="submit" name="find" value="Find">
+                    </fieldset>
+                </form>
+            </div>
+       		<div class="footer">
+				<p>Created using <a href="http://support.gnip.com/apis/search_full_archive_api/">Twitter's Full-Archive Search API</a>, in conjunction with<a href=""> Google Maps JavaScript API</a>.</p>
+             	<div id="copyright">
+                	<p>© 2018 Kira Copeland - All rights reserved </p> 
+            	</div>
+        	</div>
+		</div>
+		<div class="heroImageContainer">
+			<img class="heroImage" src="images/HeroImage%201.jpg">
+			<div class="imageOverlay"></div>
+        </div>
+		<!--Scripts-->
+<!--        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>-->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+		<script src="tweets.js" type="text/javascript"></script>
+        <script src="behaviour.js" type="text/javascript">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Findo - Results</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+         <!--Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+         <!--Stylesheets-->
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+		<!--Google Map-->
+		<div id="googleMap">
+		</div>
+		<!--Tweet Section-->
+		<div class="sideSection">
+			<div class="titleSection">
+				<a href="index.html"><img src="images/Findo%20Logo-Reverse.png"></a>
+			</div>
+			<div class="searchField">
+                <form class="resultForm" autocomplete="off" action="results.html" name="userSearch">
+                    <fieldset>
+                        <div class="resultInputAlign">
+                        	<label class="resultLabelTopic">
+								<span class="icon-Error-Mark"></span>Please enter a topic
+							</label>
+                         	<div class="outline">
+							 	<input class="resultInput resultTopic" type="text" placeholder="Topic" value ="" name="topic">
+                        	</div>
+						</div>
+						<div class="resultInputAlign">
+                        	<label class="resultLabelLocation">
+								<span class="icon-Error-Mark"></span>Please enter a location
+							</label>
+                        	<div class="outline">
+								<input class="resultInput resultLocation" type="text" placeholder="Location" name="location">
+                        	</div>
+						</div>
+                        <input class="resultSubmit" type="submit" name="find" value="Find">
+                    </fieldset>
+                </form>
+            </div>
+			<div class="twitterCover">
+				<div class="tweetInformation">
+					<div class="verticalContainer">
+						<div class="verticalLine"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Scripts-->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCK_yL7fP4U6BDUBiPdCNz7MKne90VEn6A&callback=initMap" async defer></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+		<script src="tweets.js" type="text/javascript"></script>
+        <script src="behaviour.js" type="text/javascript">
+        </script>
+    </body>
+</html>

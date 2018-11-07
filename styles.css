@@ -1,0 +1,395 @@
+@font-face {
+	font-family: 'Lazyfont';
+	src: url('fonts/Lazyfont.ttf'); 
+}
+h1 {
+	font-family: 'Lazyfont';
+}
+p {
+	font-family: 'oxygen';
+	font-size: 16px;
+	text-align: center;
+	color: #cccccc;
+}
+a {
+	text-decoration: none;
+	color: #ba853e;
+	cursor: pointer;
+}
+
+/*/// - Index Page - ///*/
+
+.heroElements {
+	position: absolute;
+	z-index: 100000000000;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.heroElements img {
+	display: block;
+	margin: 30px auto 30px auto;
+	width: 300px;
+}
+.primaryInstructions {
+	display: block;
+	margin: 0 auto 20px auto;
+	width: 60%;
+	font-size: 20px;
+	line-height: 30px;
+}
+.secondaryInstructions {
+	display: block;
+	margin: 0 auto 10px auto;
+	width: 60%;
+	font-size: 16px;
+	line-height: 20px;
+}
+fieldset {
+	display: block;
+	border: none;
+	text-align: center;
+}
+.inputAlign {
+	display: inline-block;
+	margin-left: 40px;
+}
+.inputAlign:first-of-type {
+	margin-left: 0;
+}
+label {
+	visibility: hidden;
+	font-family: 'oxygen';
+	float: left;
+	clear: none;
+	margin-left: 13.5px;
+	font-size: 14px;
+	color: #e2574c;
+}
+input {
+	font-family: 'oxygen';
+	margin: 5px 0px 20px 0px;
+	padding: 10px 150px 10px 10px;
+	border-radius: 10px;
+	border-style: solid;
+	border-color: #ba853e;
+	background-color: rgba(0, 0, 0, 0.5);
+	line-height: 30px;
+	color: #cccccc;
+}
+input::-webkit-input-placeholder {
+	padding-left: 3px;
+	color: #cccccc;
+}
+input:-ms-input-placeholder {
+	padding-left: 3px;
+	color: #cccccc;
+}
+input::placeholder {
+	padding-left: 3px;
+	color: #cccccc;
+}
+input[type=submit] {
+	display: block;
+	margin: 0 auto 20px auto;
+	padding-left: 100px;
+	padding-right: 100px;
+	font-size: 20px;
+	background-color: #ba853e;
+	color: #333333;
+	cursor: pointer;
+}
+input:focus {
+	outline: none;
+	outline-width: 0;
+}
+.heroImageContainer {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.heroImage {
+	position: absolute;
+	width: 100%;
+	height: auto;
+}
+.imageOverlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+/*/// - Error Handling-Input Elements - ///*/
+
+.errorLabel {
+	visibility: visible; 
+}
+.errorInput {
+	border-color: #e2574c;
+	background-color: rgba(226, 87, 76, 0.5);
+	color: #cccccc;
+}
+.errorInput::-webkit-input-placeholder {
+	color: #cccccc;
+}
+.errorInput:-ms-input-placeholder {
+	color: #cccccc;
+}
+.errorInput::placeholder {
+	color: #cccccc;
+}
+
+/*/// - Footer - ///*/
+
+.footer {
+	width: 80%;
+	margin: 0 auto 0 auto;
+	padding-top: 5px;
+	border-top: solid 1px black;
+}
+.footer p {
+	font-size: 14px;
+}
+
+/*/// - Results - ///*/
+
+#googleMap {
+	/* necessary styling to make the Google Map display and function as needed */
+	position: static !important;
+	overflow: hidden;
+	height: 100%;
+}
+/*Removes the Google Maps watermark and terms and conditions on the map. Removed according to Google's terms and conditions - see documentation for details*/
+.gmnoprint a, .gmnoprint span {
+    display: none;
+}
+.gmnoprint div {
+    background: none !important;
+}
+.sideSection {
+	position: absolute;
+	width: 400px;
+	height: 100%;
+	overflow: hidden;
+	-webkit-box-shadow: 0px 0px 5px 0px;
+	box-shadow: 0px 0px 5px 0px;
+	background-color: #333333;
+}
+
+/*/// - Results-Form - ///*/
+
+.titleSection {
+	background-color: #ba853e;
+	padding-bottom: 5px;
+}
+.titleSection img {
+	display: block;
+	margin: 0px auto 10px auto;
+	padding: 15px 0 0 0;
+	width: 80px;
+}
+.resultForm {
+	margin-top: 10px;
+	border-bottom: solid 1px black;
+}
+.resultLabelTopic {
+	margin-left: 45px;
+	font-size: 12px;
+}
+.resultLabelLocation {
+	margin-left: 45px;
+	font-size: 12px;
+}
+.resultInput {
+	margin: 5px 0px 15px 0px;
+	padding: 5px 180px 5px 10px;
+	line-height: 20px;
+	font-size: 12px;
+}
+.resultSubmit {
+	margin: 10px auto 15px auto !important;
+	padding: 0px 50px 0px 50px !important;
+	font-size: 16px !important;
+}
+
+/*/// - Tweet Section - ///*/
+
+.twitterCover {
+	display: block;
+	height: 380px;
+	overflow-y: auto;
+	margin: 20px 20px 0 20px;
+}
+.tweetInformation {
+}
+.verticalLine {
+	position: absolute;
+	width: 27px;
+	height: 100%;
+	border-right: solid 2px #ba853e;
+}
+.tweetBox {
+}
+.username {
+	display: inline-block;
+	width: 30%;
+	top: 0;
+	margin: 0 !important;
+	margin-left: 20px !important;
+	text-align: left;
+	font-size: 16px;
+	color: #cccccc;
+}
+.at {
+	display: inline-block;
+	width: 40%;
+	top: 0;
+	margin: 0 0 0 0 !important;
+	text-align: left; 
+	font-size: 14px;
+	color: #888888;
+}
+.profile {
+	position: relative;
+	float: left;
+	clear: none;
+	width: 50px !important;
+	border-radius: 50px;
+	z-index: 10000000000;
+	border: solid 2px #ba853e;
+}
+.tweet {
+	display: block;
+	width: 80%;
+	float: right;
+	clear: none;
+	margin: 0 !important;
+	padding: 10px 0 15px 0;
+	text-align: left; 
+	font-size: 12px;
+}
+.tweetImages {
+	display: block;
+	width: 80%;
+	height: auto;
+	margin: 0 !important;
+	float: right;
+	clear: none;
+	margin-bottom: 15px !important;
+	padding-bottom: 20px !important;
+	border-bottom: solid 1px #cccccc;
+}
+.noTweetImages {
+	display: block;
+	width: 80%;
+	float: right;
+	clear: none;
+	margin-bottom: 15px !important;
+	padding-bottom: 5px !important;
+	border-bottom: solid 1px #cccccc;
+}
+
+/*/// - Error Screen - ///*/
+
+.errorElements {
+	display: block;
+	z-index: 100000000000;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.errorElements img {
+	display: block;
+	margin: 50px auto 50px auto;
+	width: 400px;
+}
+#primaryError {
+	display: block;
+	text-align: center;
+	width: 60%;
+	margin: 0 auto 20px auto;
+	font-family: 'oxygen';
+	font-size: 30px;
+	line-height: 36px;
+	color: #333333;
+}
+#errorMessage {
+	display: block;
+	width: 60%;
+	margin: 0 auto 25px auto;
+	font-family: 'oxygen';
+	font-size: 16px;
+	line-height: 20px;
+	color: #333333;
+}
+button {
+	display: block;
+	margin: 0 auto 0px auto;
+	padding: 10px 25px 10px 20px;
+	border-radius: 10px;
+	border-style: solid;
+	border-color: #ba853e;
+	font-family: 'oxygen';
+	font-size: 20px;
+	background-color: #ba853e;
+	color: #333333;
+	cursor: pointer;
+}
+button:focus {
+	outline:0;
+}
+
+/*/// - Error Icon Font - ///*/
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?dvo9oc');
+  src:  url('fonts/icomoon.eot?dvo9oc#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?dvo9oc') format('truetype'),
+    url('fonts/icomoon.woff?dvo9oc') format('woff'),
+    url('fonts/icomoon.svg?dvo9oc#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-Left-Arrow:before {
+  content: "\e901";
+  margin-right: 10px; 
+	font-size: 15px;
+}
+.icon-Error-Mark:before {
+  content: "\e900";
+  color: #e2574c;
+  margin-right: 7px;
+}
+
+/*/// - Media Queries - ///*/
+
+@media only screen and (max-width: 745px) {
+	.inputAlign {
+		margin-left: 0px;
+	}
+}
+@media only screen and (max-width: 550px) {
+	#primaryError {
+		width: 80%;
+	}
+	#errorMessage {
+		width: 80%;
+	}
+}
